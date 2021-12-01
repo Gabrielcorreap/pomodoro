@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Kalam', cursive;
+}
+
+nav img
+{
+
+height: 60px;
+
+margin: -40px;
+margin-left: 20px;
+
+}
+
+.state
+{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  padding: 35px;
+
+  background: #071026;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  margin: 15px 0;
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+}
+input {
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  outline: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 35px 0;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+label {
+  font-size: 12px;
+}
+form {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 370px;
+  margin: 5px auto;
+}
+form button {
+  background: #0B1938;
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+  border-radius: 500px;
+  
+}
+
+.btnplay {
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+  background: #0B1938;
+box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 0.25);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+transition: 0.5s ease-in-out;
+
+}
+
+.start {
+  background: #21FFAF;
+box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25);
+
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+
+.start img{
+
+margin-left: 5px;
+
+}
+
+.btnreset 
+{
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+  background: #0B1938;
+box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 0.25);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+transition: 0.5s ease-in-out;
+}
+
+.break {
+  background: rgb(0, 199, 116);
+  color: #000000;
+}
+.reset {
+  background: #FF2149;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25);
+  
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box
+{
+   background-color: #fff;
+   height: 26px;
+   width: 26px;
+}
+
+.btnstop
+{
+
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+  background: #0B1938;
+box-shadow: 0px 0px 36px 3px rgba(0, 0, 0, 0.25);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+transition: 0.5s ease-in-out;
+
+}
+
+.pause {
+  background: #FF7121;
+box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.25);
+
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  display: flex;
+justify-content: center;
+align-items: center;
+
+color: #fff;
+}
+
+.resume {
+  background: rgb(10, 107, 252);
+  font-size: 14px;
+  color: white;
+}
+.clock {
+  padding: 3px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30%;
+  font-size: 24px;
+}
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  background: linear-gradient;
+
+ stroke: #15E3FF;
+  
+
+}
+
+.pauseicon
+{
+
+  display: flex;
+
+}
+
+  .pauseicon .line1
+  {
+    height: 26px;
+    width: 7px;
+    background-color: #fff;
+    margin: 5px;
+  }
+
+  .pauseicon .line2
+  {
+    margin: 5px;
+    height: 26px;
+    width: 7px;
+    background-color: #fff;
+  }
+
+
+footer {
+  position: fixed;
+  bottom: 4px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.danger {
+  stroke: rgb(243, 17, 28);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-90deg) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head"
+      "clock form"
+      "btns ji";
+  }
+  .btn-group {
+    grid-area: btns;
+    justify-content: center;
+  }
+  .clock {
+    grid-area: clock;
+    height: 100%;
+  }
+  h1 {
+    grid-area: head;
+
+    align-self: center;
+  }
+  form {
+    align-self: center;
+    justify-self: center;
+    grid-area: form;
+    width: 50%;
+    justify-content: space-around;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    height: 40%;
+  }
+  footer {
+    position: static;
+  }
+}
